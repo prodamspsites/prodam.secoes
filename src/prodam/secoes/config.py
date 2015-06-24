@@ -12,5 +12,4 @@ class HiddenProfiles(object):
     def getNonInstallableProfiles(self):
         return [
             u'prodam.secoes:uninstall',
-            u'prodam.secoes.upgrades.v1010:default'
         ]

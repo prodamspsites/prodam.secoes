@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 
+from plone.browserlayer.utils import registered_layers
 from prodam.secoes.config import PROJECTNAME
 from prodam.secoes.interfaces import IBrowserLayer
 from prodam.secoes.testing import FUNCTIONAL_TESTING
 from prodam.secoes.testing import INTEGRATION_TESTING
-from plone.browserlayer.utils import registered_layers
-from Products.GenericSetup.upgrade import listUpgradeSteps
 
 import unittest2 as unittest
 
@@ -46,20 +45,6 @@ class TestInstall(BaseTestCase):
         )
 
 
-class TestUpgrade(BaseTestCase):
-    """Ensure product upgrades work."""
-
-    def test_to1010_available(self):
-
-        upgradeSteps = listUpgradeSteps(self.st,
-                                        self.profile,
-                                        '1000')
-        step = [step for step in upgradeSteps
-                if (step[0]['dest'] == ('1010',))
-                and (step[0]['source'] == ('1000',))]
-        self.assertEqual(len(step), 1)
-
-
 class TestUninstall(BaseTestCase):
     """Ensure product is properly uninstalled."""
 
@@ -71,5 +56,4 @@ class TestUninstall(BaseTestCase):
         self.assertFalse(self.qi.isProductInstalled(PROJECTNAME))
 
     def test_browser_layer_removed_uninstalled(self):
-        self.qi.uninstallProducts(products=[PROJECTNAME])
         self.assertNotIn(IBrowserLayer, registered_layers())

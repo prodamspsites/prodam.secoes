@@ -1,7 +1,8 @@
-Changelog
-=========
+Alterações
+----------
 
-0.1 (unreleased)
-------------------
 
-- Initial release.
+0.5 (unreleased)
+^^^^^^^^^^^^^^^^
+* Ajusta Travis CoverAlls CodeAnalysis e documentação do produto [dadlo]
+* Versão inicial do pacote [mosesjr]

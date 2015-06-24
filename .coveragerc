@@ -1,0 +1,18 @@
+[report]
+omit =
+    /home/*/.buildout/eggs/*
+    /usr/*
+    bin/test
+    buildout-cache/eggs/*
+    eggs/*
+    parts/*
+    src/prodam/portal/*
+    src/prodam.portal/*
+    src/prodam/tema/*
+    src/prodam.tema/*
+    src/prodam/tiles/*
+    src/prodam.tiles/*
+    src/prodam/tiles/*
+    src/prodam.tiles/*
+    src/prodam.portal/src/prodam/portal/browser/viewlets/analytics.py
+    src/prodam.portal/src/prodam/portal/browser/viewlets/logo.py
