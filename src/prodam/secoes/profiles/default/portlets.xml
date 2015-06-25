@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <portlets>
  <portlet title="Menu lateral" addview="prodam.portlet.secoes"
-    description="Adiciona portlet com navegação lateral">
+    description="Adiciona portlet com menu lateral">
   <for interface="plone.app.portlets.interfaces.IColumn"/>
  </portlet>
 </portlets>
