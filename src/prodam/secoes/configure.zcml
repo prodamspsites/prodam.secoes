@@ -13,5 +13,6 @@
 
   <!-- Suporte ao Generic Setup-->
   <include file="profiles.zcml" />
+  <include package=".portlets" />
 
 </configure>

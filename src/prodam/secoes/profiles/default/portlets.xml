@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<portlets>
+ <portlet title="Portlet Seção" addview="prodam.portlet.secoes"
+    description="Adiciona portlet com navegação de seção">
+  <for interface="plone.app.portlets.interfaces.IColumn"/>
+ </portlet>
+</portlets>
