@@ -8,7 +8,7 @@
   <!-- Profiles -->
   <genericsetup:registerProfile
       name="default"
-      title="prodam.secoes: Instalação do Pacote"
+      title="prodam.secoes"
       directory="profiles/default"
       description="Instala o pacote prodam.secoes dentro de um portal Plone"
       provides="Products.GenericSetup.interfaces.EXTENSION"
