@@ -6,6 +6,9 @@
 
   <includeDependencies package="." />
 
+  <!-- Adiciona dependencies.zcml -->
+  <include file="dependencies.zcml" />
+
   <permission
       id="prodam.secoes.AddExample"
       title="prodam.secoes: Add Example"
