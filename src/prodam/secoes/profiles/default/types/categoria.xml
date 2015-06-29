@@ -10,8 +10,12 @@
  <property name="link_target"></property>
  <property name="immediate_view">view</property>
  <property name="global_allow">True</property>
- <property name="filter_content_types">False</property>
- <property name="allowed_content_types"/>
+ <property name="filter_content_types">True</property>
+ <property name="allowed_content_types">
+  <element value="topic"/>
+  <element value="service"/>
+  <element value="collective.cover.content"/>
+ </property>
  <property name="allow_discussion">False</property>
  <property name="default_view">view</property>
  <property name="view_methods">
@@ -33,8 +37,8 @@
  <property name="schema"></property>
  <property name="model_source">
   &lt;model xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
-      &lt;schema&gt;
-      &lt;/schema&gt;
+  &lt;schema&gt;
+  &lt;/schema&gt;
   &lt;/model&gt;</property>
  <property name="model_file"></property>
  <property name="schema_policy">dexterity</property>
