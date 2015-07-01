@@ -18,4 +18,10 @@
   <include file="profiles.zcml" />
   <include package=".portlets" />
 
+  <!-- Registra pasta de elementos estaticos -->
+  <browser:resourceDirectory
+    name="prodam.portal"
+    directory="templates"
+    />
+
 </configure>
