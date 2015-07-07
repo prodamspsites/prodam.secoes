@@ -4,6 +4,7 @@ Alterações
 
 0.5 (unreleased)
 ^^^^^^^^^^^^^^^^
+* Adiciona view de topic [mosesjr]
 * Adiciona tipo de item service [mosesjr]
 * Adiciona tipo de item topic [mosesjr]
 * Adiciona tipo de item categorias [mosesjr]
