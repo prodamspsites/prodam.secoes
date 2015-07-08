@@ -4,6 +4,7 @@ Alterações
 
 0.5 (unreleased)
 ^^^^^^^^^^^^^^^^
+* Cria e registra pasta styles [mosesjr]
 * Ajusta sources para https seguindo padrão devido proxy [dadlo]
 * Adiciona view de service [mosesjr]
 * Adiciona view de topic [mosesjr]
