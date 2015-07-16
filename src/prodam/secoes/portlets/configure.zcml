@@ -4,14 +4,10 @@
 
   <include package="plone.app.portlets" />
 
-  <plone:portlet
-    name="prodam.portlet.secoes"
-    interface=".portlets.ISecoesPortlet"
-    assignment=".portlets.SecoesAssignment"
-    view_permission="zope2.View"
-    edit_permission="cmf.ManagePortal"
-    renderer=".portlets.SecoesRenderer"
-    addview=".portlets.SecoesAddForm"
-    />
+  <plone:portletRenderer
+      portlet="plone.app.portlets.portlets.navigation.INavigationPortlet"
+      class=".portlets.Renderer"
+      layer="prodam.secoes.interfaces.IBrowserLayer"
+      />
 
 </configure>

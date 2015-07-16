@@ -4,6 +4,9 @@ Alterações
 
 0.5 (unreleased)
 ^^^^^^^^^^^^^^^^
+* Customiza portlet navigation [mosesjr]
+* Cria e registra secoes.css [mosesjr]
+* Cria e registra pasta styles [mosesjr]
 * Ajusta sources para https seguindo padrão devido proxy [dadlo]
 * Adiciona view de service [mosesjr]
 * Adiciona view de topic [mosesjr]
@@ -11,6 +14,5 @@ Alterações
 * Adiciona tipo de item topic [mosesjr]
 * Adiciona tipo de item categorias [mosesjr]
 * Adiciona prodam.portal como dependência de instalação [mosesjr]
-* Adiciona portlet de seção [mosesjr]
 * Ajusta Travis CoverAlls CodeAnalysis e documentação do produto [dadlo]
 * Versão inicial do pacote [mosesjr]

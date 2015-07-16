@@ -1,0 +1,7 @@
+.portletNavigationTree {
+  position: relative;
+}
+
+.portletNavigationTree ul {
+  float: left;
+}

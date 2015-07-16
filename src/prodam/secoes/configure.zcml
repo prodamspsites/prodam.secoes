@@ -21,5 +21,6 @@
 
   <!-- Layer skin registry -->
   <cmf:registerDirectory name="templates" directory="templates" recursive="True" />
+  <cmf:registerDirectory name="estilos" directory="styles" recursive="True" />
 
 </configure>
