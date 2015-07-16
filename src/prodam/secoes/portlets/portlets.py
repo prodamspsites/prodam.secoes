@@ -1,29 +1,37 @@
 # -*- coding: utf-8 -*-
-
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from plone.app.portlets.portlets.navigation import AddForm
-from plone.app.portlets.portlets.navigation import Assignment
-from plone.app.portlets.portlets.navigation import INavigationPortlet
-from plone.app.portlets.portlets.navigation import Renderer
-from zope.interface import implements
+from plone.app.portlets.portlets.navigation import Renderer as BaseRenderer
 
 
-class ISecoesPortlet(INavigationPortlet):
-    """ Defines a new portlet "grey static" which takes properties of the existing static text portlet. """
-    pass
+class Renderer(BaseRenderer):
 
+    def process_navigation(self, data):
+        ''' '''
+        portal_url = self.urltool()
+        navroot_url = self.getNavRoot().absolute_url()
+        for item in data:
+            remoteUrl = item.get('getRemoteUrl', '')
+            if '${portal_url}' in str(remoteUrl):
+                item['getRemoteUrl'] = remoteUrl.replace('${portal_url}',
+                                                         portal_url)
+            elif '${portal_url}' in str(remoteUrl):
+                item['getRemoteUrl'] = remoteUrl.replace(
+                    '${navigation_root_url}', navroot_url)
+        return data
 
-class SecoesRenderer(Renderer):
-    """ Overrides static.pt in the rendering of the portlet. """
-    render = ViewPageTemplateFile('templates/secoes.pt')
+    def createNavTree(self):
+        data = self.getNavTree()
 
+        bottomLevel = (self.data.bottomLevel or
+                       self.properties.getProperty('bottomLevel', 0))
+        if bottomLevel < 0:
+            # Special case where navigation tree depth is negative
+            # meaning that the admin does not want the listing to be displayed
+            return self.recurse([], level=1, bottomLevel=bottomLevel)
+        else:
+            children = self.process_navigation(data.get('children', []))
+            return self.recurse(children=children,
+                                level=1,
+                                bottomLevel=bottomLevel)
 
-class SecoesAssignment(Assignment):
-    """ Assigner for grey static portlet. """
-    implements(ISecoesPortlet)
-
-
-class SecoesAddForm(AddForm):
-    """ Make sure that add form creates instances of our custom portlet instead of the base class portlet. """
-    def create(self, data):
-        return SecoesAssignment(**data)
+    recurse = ViewPageTemplateFile('templates/secoes.pt')
