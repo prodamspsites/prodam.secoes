@@ -4,6 +4,7 @@ Alterações
 
 0.5 (unreleased)
 ^^^^^^^^^^^^^^^^
+* Ajusta uso de sources padrão do buildout [dadlo]
 * Customiza portlet navigation [mosesjr]
 * Cria e registra secoes.css [mosesjr]
 * Cria e registra pasta styles [mosesjr]
