@@ -19,6 +19,9 @@
   <include file="profiles.zcml" />
   <include package=".portlets" />
 
+  <!-- Registra pasta de traducoes -->
+  <i18n:registerTranslations directory="locales" />
+
   <!-- Layer skin registry -->
   <cmf:registerDirectory name="templates" directory="templates" recursive="True" />
   <cmf:registerDirectory name="estilos" directory="styles" recursive="True" />

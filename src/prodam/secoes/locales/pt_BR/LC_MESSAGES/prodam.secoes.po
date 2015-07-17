@@ -1,0 +1,42 @@
+# Danilo Sartorelli Barbato <dadlobr@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.5\n"
+"POT-Creation-Date: 2015-07-17 13:56+0000\n"
+"PO-Revision-Date: 2015-07-17 10:05+0000\n"
+"Last-Translator: Danilo Sartorelli Barbato <dadlobr@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: pt_br\n"
+"Language-Name: Português brasileiro\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: prodam.secoes\n"
+"Language: pt-BR\n"
+
+#: ./profiles/default/types/service.xml
+msgid "Adds a service"
+msgstr "Adiciona um serviço"
+
+#: ./profiles/default/types/topic.xml
+msgid "Allows you to add services and subtopics"
+msgstr "Permite que serviços e subtópicos sejam adicionados"
+
+#: ./profiles/default/types/section.xml
+msgid "Allows you to add services organized by topics"
+msgstr "Permite que serviços sejam adicionados organizados por tópicos"
+
+#: ./profiles/default/types/section.xml
+msgid "Section"
+msgstr "Seção"
+
+#: ./profiles/default/types/service.xml
+msgid "Service"
+msgstr "Serviço"
+
+#: ./profiles/default/types/topic.xml
+msgid "Topic"
+msgstr "Tópico"
+
