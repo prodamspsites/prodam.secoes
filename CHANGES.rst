@@ -4,6 +4,7 @@ Alterações
 
 0.5 (unreleased)
 ^^^^^^^^^^^^^^^^
+* Adiciona internacionalização para o produto [dadlo]
 * Ajusta uso de sources padrão do buildout [dadlo]
 * Customiza portlet navigation [mosesjr]
 * Cria e registra secoes.css [mosesjr]

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<object name="section" meta_type="Dexterity FTI" i18n:domain="plone"
+<object name="section" meta_type="Dexterity FTI" i18n:domain="prodam.secoes"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
  <property name="title" i18n:translate="">Section</property>
  <property name="description" i18n:translate="">Allows you to add services organized by topics</property>
