@@ -21,16 +21,23 @@
                 normalizeString nocall: context/plone_utils/normalizeString;"
     tal:condition="python:bottomLevel &lt;= 0 or level &lt;= bottomLevel">
 
-        <tal:level define="item_class string:state-${node/normalized_review_state};
-                           item_type_class python:'contenttype-' + normalizeString(item_type);
-                           item_class python:is_current and item_class + ' navTreeCurrentItem' or item_class;">
+        <tal:level define="item_class string:topico;
+                           item_type_class python:normalizeString(item_type);
+                           item_class python:is_current and item_class + ' treeCurrentItem' or item_class;">
 
-          <li class="" tal:attributes="class node/id">
-              <a tal:attributes="href python:use_remote_url and item_remote_url or item_url;
-                                 title node/Description;
-                                 class string:$item_class${li_class}${li_extr_class}${li_folder_class} $item_type_class">
-                  <span tal:content="node/Title">Selected Item Title</span>
-              </a>
+          <li class="" tal:attributes="class string:${node/id} ${item_type} ${item_class} ${li_extr_class} level${level}">
+            <a tal:attributes="href python:use_remote_url and item_remote_url or item_url;
+                               title node/Description;
+                               class string:$item_class${li_class}${li_folder_class} $item_type_class">
+                <span tal:content="node/Title">Selected Item Title</span>
+            </a>
+
+            <tal:children condition="python: len(children) > 0 and level > 2">
+              <ul tal:attributes="class python:'navTree navTreeLevel'+str(level)"
+                  tal:condition="python: len(children) > 0 and show_children and bottomLevel and level < bottomLevel or True">
+                  <span tal:replace="structure python:view.recurse(children=children, level=level+1, bottomLevel=bottomLevel)" />
+              </ul>
+            </tal:children>
           </li>
 
         </tal:level>
@@ -42,7 +49,7 @@
                                children  node/children;"
                    tal:condition="python:bottomLevel &lt;= 0 or level &lt;= bottomLevel">
 
-        <tal:children condition="python: len(children) > 0">
+        <tal:children condition="python: len(children) > 0 and level < 3">
           <span tal:define="ajusta_level python:'</ul>'" tal:replace="structure ajusta_level" />
           <ul tal:attributes="class python:'navTree navTreeLevel'+str(level)"
               tal:condition="python: len(children) > 0 and show_children and bottomLevel and level < bottomLevel or True">

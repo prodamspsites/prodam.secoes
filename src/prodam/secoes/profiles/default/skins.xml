@@ -2,10 +2,7 @@
 <object name="portal_skins" meta_type="Plone Skins Tool">
   <object name="secoes.templates" meta_type="Filesystem Directory View"
         directory="prodam.secoes:templates"/>
-  <object name="secoes.estilos" meta_type="Filesystem Directory View"
-        directory="prodam.secoes:styles"/>
   <skin-path name="*">
     <layer name="secoes.templates" insert-after="custom"/>
-    <layer name="secoes.estilos" insert-after="custom"/>
   </skin-path>
 </object>

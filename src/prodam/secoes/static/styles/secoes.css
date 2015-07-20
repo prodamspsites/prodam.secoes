@@ -1,0 +1,161 @@
+/* Reseta css plone */
+
+
+dl.portlet ul.navTree.navTreeLevel0 li a {
+  border-left: 5px solid transparent;
+}
+
+dl.portlet ul.navTree.navTreeLevel0 li a:hover {
+  color: white !important;
+}
+
+
+/* Redefine largura das colunas */
+
+.secao-tres-colunas.portaltype-service #portal-column-one,
+.secao-tres-colunas.portaltype-topic #portal-column-one,
+.secao-tres-colunas.portaltype-section #portal-column-one {
+  width: 444px;
+}
+
+.secao-tres-colunas.portaltype-service #portal-column-content,
+.secao-tres-colunas.portaltype-topic #portal-column-content,
+.secao-tres-colunas.portaltype-section #portal-column-content {
+  width: 506px;
+  margin-left: -506px;
+}
+
+
+/* Ajusta background do portlet */
+.portletNavigationTree dd {
+  background: url("++resource++secoes.static/images/menu-bg.jpg");
+}
+
+
+/* Ajusta posição das ULs */
+
+.portletNavigationTree {
+  position: relative;
+}
+
+.portletNavigationTree ul {
+  float: left;
+  overflow: hidden;
+}
+
+
+
+/* Customiza navegação de primeiro nível */
+
+.secao-duas-colunas.portaltype-service #portal-column-one,
+.secao-duas-colunas.portaltype-topic #portal-column-one,
+.secao-duas-colunas.portaltype-section #portal-column-one {
+  width: 371px;
+}
+
+.secao-duas-colunas.portaltype-service #portal-column-content,
+.secao-duas-colunas.portaltype-topic #portal-column-content,
+.secao-duas-colunas.portaltype-section #portal-column-content {
+  width: 579px;
+  margin-left: -579px;
+}
+
+.portletNavigationTree .navTreeLevel0 {
+  width: 180px;
+}
+
+.portaltype-section .portletNavigationTree .navTreeLevel0 {
+  float: none;
+}
+
+.portletNavigationTree .navTreeLevel0 li {
+  border-bottom: 1px solid #7c7c7c;
+  margin: 0;
+}
+
+.portletNavigationTree .navTreeLevel0 li a {
+  color: #ffffff;
+  font-size: 1.02em;
+  display: block;
+  height: 52px;
+  line-height: 52px;
+  background: #5b5b5b;
+  padding-left: 56px;
+}
+
+
+dl.portlet ul.navTree.navTreeLevel0 li a:hover,
+dl.portlet ul.navTree.navTreeLevel0 li.navTreeItemInPath a,
+dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
+  background: #01a4b7;
+  border-left-color: #07c5db;
+}
+
+/* Customiza navegação de segundo nível */
+
+.portletNavigationTree .navTreeLevel1,
+.portletNavigationTree .navTreeLevel2,
+.portletNavigationTree .navTreeLevel3 {
+  width: 190px;
+  border: 1px solid #8d8d8d;
+  margin-left: -1px;
+  list-style: disc inside;
+  color: #f00;
+}
+
+.portletNavigationTree .navTreeLevel1 li,
+.portletNavigationTree .navTreeLevel2 li,
+.portletNavigationTree .navTreeLevel3 li {
+  background: #e9e9e9;
+  border-bottom: 1px solid #c4c4c4;
+  font-size: 1em;
+  margin: 0;
+}
+
+.portletNavigationTree .navTreeLevel1 li a,
+.portletNavigationTree .navTreeLevel2 li a,
+.portletNavigationTree .navTreeLevel3 li a {
+  color: #333;
+  padding: 12px 0;
+  padding-left: 16px;
+  display: inline-block;
+  background: transparent;
+}
+
+
+/* Customiza navegação de terceiro nível */
+
+.secao-tres-colunas .portletNavigationTree .navTreeLevel0 {
+  width: 62px;
+}
+
+
+/* Customiza navegação de quarto nível */
+
+.portletNavigationTree .navTreeLevel2 li.topic.treeCurrentItem {
+  list-style: none;
+}
+
+.portletNavigationTree .navTreeLevel2 li.topic.treeCurrentItem a {
+  padding-bottom: 32px;
+}
+
+.portletNavigationTree .navTreeLevel3,
+.portletNavigationTree .navTreeLevel3 li {
+  border: 0;
+}
+
+.portletNavigationTree .navTreeLevel3 li.level4.service a {
+  padding: 0 0 0 18px;
+  margin: 0;
+}
+
+
+
+/* Ícones do primeiro nível de menu */
+
+dl.portlet ul.navTree.navTreeLevel0 li.teste1 a {
+  background-image: url("++resource++secoes.static/images/cid-casa-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
