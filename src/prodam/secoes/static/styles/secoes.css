@@ -3,6 +3,8 @@
 
 dl.portlet ul.navTree.navTreeLevel0 li a {
   border-left: 5px solid transparent;
+  display: table;
+  width: 114px;
 }
 
 dl.portlet ul.navTree.navTreeLevel0 li a:hover {
@@ -76,19 +78,35 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 .portletNavigationTree .navTreeLevel0 li a {
   color: #ffffff;
   font-size: 1.02em;
-  display: block;
+  display: table;
   height: 52px;
-  line-height: 52px;
   background: #5b5b5b;
-  padding-left: 56px;
+  padding: 0 5px 0 56px;
+  transition: background .2s linear;
+  -moz-transition: background .2s linear;
+  -ms-transition: background .2s linear;
+  -o-transition: background .2s linear;
+  -webkit-transition: background .2s linear;
+}
+
+.portletNavigationTree .navTreeLevel0 li a span {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 
-dl.portlet ul.navTree.navTreeLevel0 li a:hover,
-dl.portlet ul.navTree.navTreeLevel0 li.navTreeItemInPath a,
-dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
-  background: #01a4b7;
-  border-left-color: #07c5db;
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li a:hover,
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.navTreeItemInPath a,
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
+  background: #e37d02;
+  border-left-color: #ff8b00;
+}
+
+.section-turista dl.portlet ul.navTree.navTreeLevel0 li a:hover,
+.section-turista dl.portlet ul.navTree.navTreeLevel0 li.navTreeItemInPath a,
+.section-turista dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
+  background: #919e02;
+  border-left-color: #abba00;
 }
 
 /* Customiza navegação de segundo nível */
@@ -122,6 +140,14 @@ dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
   background: transparent;
 }
 
+.portletNavigationTree .navTreeLevel1 li a:hover,
+.portletNavigationTree .navTreeLevel2 li a:hover,
+.portletNavigationTree .navTreeLevel3 li a:hover,
+.portletNavigationTree .navTreeLevel1 li a.navTreeCurrentNode {
+  color: red !important;
+  background: #BBB;
+
+}
 
 /* Customiza navegação de terceiro nível */
 
@@ -154,8 +180,194 @@ dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
 
 /* Ícones do primeiro nível de menu */
 
-dl.portlet ul.navTree.navTreeLevel0 li.teste1 a {
+dl.portlet ul.navTree.navTreeLevel0 li.casa-e-moradia a {
   background-image: url("++resource++secoes.static/images/cid-casa-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+dl.portlet ul.navTree.navTreeLevel0 li.rua-e-bairro a {
+  background-image: url("++resource++secoes.static/images/cid-rua-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+dl.portlet ul.navTree.navTreeLevel0 li.familia-e-assistencia-social a {
+  background-image: url("++resource++secoes.static/images/cid-familia-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+dl.portlet ul.navTree.navTreeLevel0 li.transportes a {
+  background-image: url("++resource++secoes.static/images/cid-transportes-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+dl.portlet ul.navTree.navTreeLevel0 li.financas a {
+  background-image: url("++resource++secoes.static/images/cid-financas-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+dl.portlet ul.navTree.navTreeLevel0 li.trabalho a {
+  background-image: url("++resource++secoes.static/images/cid-seguranca-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+dl.portlet ul.navTree.navTreeLevel0 li.saude-e-bem-estar a {
+  background-image: url("++resource++secoes.static/images/cid-saude-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+dl.portlet ul.navTree.navTreeLevel0 li.educacao a {
+  background-image: url("++resource++secoes.static/images/cid-educacao-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+dl.portlet ul.navTree.navTreeLevel0 li.cultura a {
+  background-image: url("++resource++secoes.static/images/cid-cultura-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+dl.portlet ul.navTree.navTreeLevel0 li.esportes-e-lazer a {
+  background-image: url("++resource++secoes.static/images/cid-esportes-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+dl.portlet ul.navTree.navTreeLevel0 li.animais a {
+  background-image: url("++resource++secoes.static/images/cid-animais-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
+  background-image: url("++resource++secoes.static/images/cid-trabalho-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+
+/* Empresa */
+
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.abertura-de-empresas a {
+  background-image: url("++resource++secoes.static/images/emp-empresas-mini.png");
+  background-position:  7px 10px;
+  background-repeat: no-repeat;
+}
+
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.nota-fiscal-paulistana a {
+  background-image: url("++resource++secoes.static/images/emp-nota-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.programas-e-beneficios a {
+  background-image: url("++resource++secoes.static/images/emp-programas-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.alvaras-certidoes-e-licencas a {
+  background-image: url("++resource++secoes.static/images/emp-alvara-mini.png");
+  background-position:  7px 5px;
+  background-repeat: no-repeat;
+}
+
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.impostos-e-taxas a {
+  background-image: url("++resource++secoes.static/images/emp-impostos-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.cadastros a {
+  background-image: url("++resource++secoes.static/images/emp-cadastros-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.licitacoes-e-fornecedores a {
+  background-image: url("++resource++secoes.static/images/emp-licitacoes-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.consultas-declaracoes-e-normas a {
+  background-image: url("++resource++secoes.static/images/emp-consultas-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.legislacao a {
+  background-image: url("++resource++secoes.static/images/emp-cursos-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.empreendedorismo a {
+  background-image: url("++resource++secoes.static/images/emp-empreendedor-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.oportunidades a {
+  background-image: url("++resource++secoes.static/images/emp-oportunidades-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-empresa dl.portlet ul.navTree.navTreeLevel0 li.cursos a {
+  background-image: url("++resource++secoes.static/images/emp-cursos-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+
+/* Turista */
+
+.section-turista dl.portlet ul.navTree.navTreeLevel0 li.compras a {
+  background-image: url("++resource++secoes.static/images/tur-compras-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-turista dl.portlet ul.navTree.navTreeLevel0 li.gastronomia a {
+  background-image: url("++resource++secoes.static/images/tur-gastronomia-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-turista dl.portlet ul.navTree.navTreeLevel0 li.noite a {
+  background-image: url("++resource++secoes.static/images/tur-noite-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-turista dl.portlet ul.navTree.navTreeLevel0 li.negocios a {
+  background-image: url("++resource++secoes.static/images/tur-negocios-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-turista dl.portlet ul.navTree.navTreeLevel0 li.atracoes a {
+  background-image: url("++resource++secoes.static/images/tur-atracoes-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-turista dl.portlet ul.navTree.navTreeLevel0 li.roteiros a {
+  background-image: url("++resource++secoes.static/images/tur-roteiros-mini.png");
+  background-position:  7px 6px;
+  background-repeat: no-repeat;
+}
+
+.section-turista dl.portlet ul.navTree.navTreeLevel0 li.informacoes a {
+  background-image: url("++resource++secoes.static/images/tur-informacoes-mini.png");
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
