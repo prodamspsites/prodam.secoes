@@ -4,6 +4,8 @@ Alterações
 
 0.5 (unreleased)
 ^^^^^^^^^^^^^^^^
+* Cria pasta assetsi e images [mosesjr]
+* Estiliza menus do portlet navigation [mosesjr]
 * Adiciona internacionalização para o produto [dadlo]
 * Ajusta uso de sources padrão do buildout [dadlo]
 * Customiza portlet navigation [mosesjr]
