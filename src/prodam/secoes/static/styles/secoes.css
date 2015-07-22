@@ -18,6 +18,7 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 .secao-tres-colunas.portaltype-topic #portal-column-one,
 .secao-tres-colunas.portaltype-section #portal-column-one {
   width: 444px;
+  margin-top: 60px;
 }
 
 .secao-tres-colunas.portaltype-service #portal-column-content,
@@ -53,6 +54,7 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 .secao-duas-colunas.portaltype-topic #portal-column-one,
 .secao-duas-colunas.portaltype-section #portal-column-one {
   width: 371px;
+  margin-top: 60px;
 }
 
 .secao-duas-colunas.portaltype-service #portal-column-content,
@@ -94,6 +96,12 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
   vertical-align: middle;
 }
 
+dl.portlet ul.navTree.navTreeLevel0 li a:hover,
+dl.portlet ul.navTree.navTreeLevel0 li.navTreeItemInPath a,
+dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
+  background: #01a4b7;
+  border-left-color: #07c5db;
+}
 
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li a:hover,
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li.navTreeItemInPath a,
@@ -371,3 +379,129 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
+
+/*/*Área de conteúdo*/
+
+.template-topic_view.section-cidadao #portal-columns,
+.template-topic_view.section-empresa #portal-columns,
+.template-topic_view.section-turista #portal-columns,
+.template-service_view.section-cidadao #portal-columns,
+.template-service_view.section-empresa #portal-columns,
+.template-service_view.section-turista #portal-columns,
+.template-edit.section-cidadao #portal-columns{
+  background: url("++resource++secoes.static/images/bg-checkers.png") repeat-x;
+}
+.section-cidadao #content .titulo_principal{
+  background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 0 transparent;
+  height: 57px;
+  margin-top: -12px;
+  margin-left: -384px;
+}
+.userrole-authenticated.section-cidadao #content .titulo_principal{
+  background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -0 transparent;
+  height: 57px;
+  margin-top: -116px;
+  margin-left: -384px;
+  float: left;
+  width: 390px;
+}
+.section-empresa #content .titulo_principal{
+  background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -65px transparent;
+  height: 57px;
+  margin-top: -12px;
+  margin-left: -384px;
+}
+.userrole-authenticated.section-empresa #content .titulo_principal {
+  background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -65px transparent;
+  height: 57px;
+  margin-top: -116px;
+  margin-left: -384px;
+  float: left;
+  width: 390px;
+}
+.section-turista #content .titulo_principal{
+  background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -130px transparent;
+  height: 57px;
+  margin-top: -12px;
+  margin-left: -384px;
+}
+.userrole-authenticated.section-turista #content .titulo_principal {
+  background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -130px transparent;
+  height: 57px;
+  margin-top: -116px;
+  margin-left: -384px;
+  float: left;
+  width: 390px;
+}
+.secao-tres-colunas #content .titulo_principal{
+  margin-left: -457px !important;
+}
+.section-cidadao #edit-bar,
+.section-empresa #edit-bar,
+.section-turista #edit-bar{
+  margin-top: 60px;
+}
+.userrole-authenticated #content .titulo_principal h1{
+  color: #FFF;
+  letter-spacing: 0;
+  font-weight: normal;
+  margin:8px 0 0 29px;
+  font-size: 1.95em;
+  padding: 0;
+}
+#content .titulo_principal h1{
+  color: #FFF;
+  letter-spacing: 0;
+  font-weight: normal;
+  padding:8px 0 0 29px;
+  font-size: 1.95em;
+}
+#content .titulo_principal h1 span{
+  text-transform: capitalize;
+  font-weight: bold;
+}
+#content #servicos{
+  background: #fff;
+  font-size: 1em;
+  padding-left: 22px;
+  padding-top: 16px;
+  margin-top: 4px;
+}
+#content #servicos a{
+  color: #FE0000;
+}
+#content #servicos header{
+  border-bottom: 3px black double;
+  margin-bottom: 18px;
+  padding: 0 0 0.3em;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+#content #servicos header h2{
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-size: 1.9em;
+  line-height: normal;
+}
+#content #topicos img{
+  margin-left: -210px;
+  margin-top: 3px;
+  position: relative;
+  z-index: -1;
+}
+.pmsp-txt-dstaq-1{
+  margin: 20px 0;
+  padding: 20px 20px;
+  border: 1px dotted #b2b2b2;
+  background-color: #fae8e8;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+.pmsp-trbk {
+  font-size: 1.06em;
+  font-weight: 600;
+  margin-top: 1em;
+  text-decoration: none;
+}
+
