@@ -508,10 +508,11 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   line-height: normal;
 }
 #content #topicos img{
-  margin-left: -210px;
+  float: right;
   margin-top: 3px;
   position: relative;
   z-index: -1;
+  margin-right: 7px;
 }
 .pmsp-txt-dstaq-1{
   margin: 20px 0;
