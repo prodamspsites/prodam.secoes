@@ -388,13 +388,8 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 
 /*/*Área de conteúdo*/
 
-.template-topic_view.section-cidadao #portal-columns,
-.template-topic_view.section-empresa #portal-columns,
-.template-topic_view.section-turista #portal-columns,
-.template-service_view.section-cidadao #portal-columns,
-.template-service_view.section-empresa #portal-columns,
-.template-service_view.section-turista #portal-columns,
-.template-edit.section-cidadao #portal-columns{
+.portaltype-topic #portal-columns,
+.portaltype-service #portal-columns{
   background: url("++resource++secoes.static/images/bg-checkers.png") repeat-x;
 }
 .section-cidadao #content .titulo_principal{
@@ -403,33 +398,11 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   margin-top: -12px;
   margin-left: -384px;
 }
-.userrole-authenticated.section-cidadao #content .titulo_principal{
-  background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -0 transparent;
-  height: 57px;
-  margin-top: -116px;
-  margin-left: -384px;
-  float: left;
-  width: 390px;
-}
-.userrole-authenticated.section-cidadao.template-service_view #content .titulo_principal{
-  margin-top: -134px;
-}
 .section-empresa #content .titulo_principal{
   background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -65px transparent;
   height: 57px;
   margin-top: -12px;
   margin-left: -384px;
-}
-.userrole-authenticated.section-empresa #content .titulo_principal {
-  background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -65px transparent;
-  height: 57px;
-  margin-top: -116px;
-  margin-left: -384px;
-  float: left;
-  width: 390px;
-}
-.userrole-authenticated.section-empresa.template-service_view #content .titulo_principal{
-  margin-top: -134px;
 }
 .section-turista #content .titulo_principal{
   background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -130px transparent;
@@ -437,26 +410,23 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   margin-top: -12px;
   margin-left: -384px;
 }
-.userrole-authenticated.section-turista #content .titulo_principal {
-  background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -130px transparent;
+.userrole-authenticated.portaltype-topic #content .titulo_principal{
   height: 57px;
   margin-top: -116px;
   margin-left: -384px;
   float: left;
   width: 390px;
 }
-.userrole-authenticated.section-turista.template-service_view #content .titulo_principal{
+.userrole-authenticated.portaltype-service #content .titulo_principal{
   margin-top: -134px;
+  float: left;
+  width: 100%;
 }
 .secao-tres-colunas #content .titulo_principal{
   margin-left: -457px !important;
 }
-.template-topic_view.section-cidadao #edit-bar,
-.template-service_view.section-cidadao #edit-bar,
-.template-topic_view.section-empresa #edit-bar,
-.template-service_view.section-empresa #edit-bar,
-.template-topic_view.section-turista #edit-bar,
-.template-service_view.section-turista #edit-bar{
+.portaltype-topic #edit-bar,
+.portaltype-service #edit-bar{
   margin-top: 60px;
 }
 .template-topic_view .portalMessage,
@@ -489,7 +459,6 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   padding-left: 22px;
   padding-top: 16px;
   margin-top: 45px;
-
 }
 #content #servicos{
   background: #fff;
@@ -498,7 +467,6 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   padding-top: 16px;
   margin-top: 4px;
 }
-
 #content #servicos a{
   color: #FE0000;
 }
