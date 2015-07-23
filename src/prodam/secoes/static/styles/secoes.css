@@ -16,14 +16,14 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 
 .secao-tres-colunas.portaltype-service #portal-column-one,
 .secao-tres-colunas.portaltype-topic #portal-column-one,
-.secao-tres-colunas.portaltype-section #portal-column-one {
+.secao-tres-colunas.portaltype-section #portal-column-one{
   width: 444px;
   margin-top: 60px;
 }
 
 .secao-tres-colunas.portaltype-service #portal-column-content,
 .secao-tres-colunas.portaltype-topic #portal-column-content,
-.secao-tres-colunas.portaltype-section #portal-column-content {
+.secao-tres-colunas.portaltype-section #portal-column-content{
   width: 506px;
   margin-left: -506px;
 }
@@ -52,16 +52,22 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 
 .secao-duas-colunas.portaltype-service #portal-column-one,
 .secao-duas-colunas.portaltype-topic #portal-column-one,
-.secao-duas-colunas.portaltype-section #portal-column-one {
+.secao-duas-colunas.portaltype-section #portal-column-one,
+.portaltype-topic #portal-column-one  {
   width: 371px;
   margin-top: 60px;
 }
 
 .secao-duas-colunas.portaltype-service #portal-column-content,
 .secao-duas-colunas.portaltype-topic #portal-column-content,
-.secao-duas-colunas.portaltype-section #portal-column-content {
+.secao-duas-colunas.portaltype-section #portal-column-content,
+.portaltype-topic #portal-column-content {
   width: 579px;
   margin-left: -579px;
+}
+.portaltype-topic .managePortletsLink{
+  margin-top: 5px;
+  clear: both;
 }
 
 .portletNavigationTree .navTreeLevel0 {
@@ -445,9 +451,12 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 .secao-tres-colunas #content .titulo_principal{
   margin-left: -457px !important;
 }
-.section-cidadao #edit-bar,
-.section-empresa #edit-bar,
-.section-turista #edit-bar{
+.template-topic_view.section-cidadao #edit-bar,
+.template-service_view.section-cidadao #edit-bar,
+.template-topic_view.section-empresa #edit-bar,
+.template-service_view.section-empresa #edit-bar,
+.template-topic_view.section-turista #edit-bar,
+.template-service_view.section-turista #edit-bar{
   margin-top: 60px;
 }
 .template-topic_view .portalMessage,
@@ -528,4 +537,5 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   margin-top: 1em;
   text-decoration: none;
 }
+
 
