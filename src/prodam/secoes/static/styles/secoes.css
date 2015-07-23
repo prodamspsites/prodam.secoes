@@ -405,6 +405,9 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   float: left;
   width: 390px;
 }
+.userrole-authenticated.section-cidadao.template-service_view #content .titulo_principal{
+  margin-top: -134px;
+}
 .section-empresa #content .titulo_principal{
   background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -65px transparent;
   height: 57px;
@@ -418,6 +421,9 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   margin-left: -384px;
   float: left;
   width: 390px;
+}
+.userrole-authenticated.section-empresa.template-service_view #content .titulo_principal{
+  margin-top: -134px;
 }
 .section-turista #content .titulo_principal{
   background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -130px transparent;
@@ -433,6 +439,9 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   float: left;
   width: 390px;
 }
+.userrole-authenticated.section-turista.template-service_view #content .titulo_principal{
+  margin-top: -134px;
+}
 .secao-tres-colunas #content .titulo_principal{
   margin-left: -457px !important;
 }
@@ -440,6 +449,11 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 .section-empresa #edit-bar,
 .section-turista #edit-bar{
   margin-top: 60px;
+}
+.template-topic_view .portalMessage,
+.template-service_view .portalMessage{
+  position: absolute;
+  width: 100%;
 }
 .userrole-authenticated #content .titulo_principal h1{
   color: #FFF;
@@ -460,6 +474,14 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   text-transform: capitalize;
   font-weight: bold;
 }
+.userrole-authenticated #content #servicos{
+  background: #fff;
+  font-size: 1em;
+  padding-left: 22px;
+  padding-top: 16px;
+  margin-top: 45px;
+
+}
 #content #servicos{
   background: #fff;
   font-size: 1em;
@@ -467,6 +489,7 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   padding-top: 16px;
   margin-top: 4px;
 }
+
 #content #servicos a{
   color: #FE0000;
 }
@@ -485,11 +508,10 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   line-height: normal;
 }
 #content #topicos img{
-  float: right;
+  margin-left: -210px;
   margin-top: 3px;
   position: relative;
   z-index: -1;
-  margin-right: 7px;
 }
 .pmsp-txt-dstaq-1{
   margin: 20px 0;
