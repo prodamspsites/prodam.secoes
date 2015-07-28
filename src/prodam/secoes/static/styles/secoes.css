@@ -16,14 +16,14 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 
 .secao-tres-colunas.portaltype-service #portal-column-one,
 .secao-tres-colunas.portaltype-topic #portal-column-one,
-.secao-tres-colunas.portaltype-section #portal-column-one {
+.secao-tres-colunas.portaltype-section #portal-column-one{
   width: 444px;
   margin-top: 60px;
 }
 
 .secao-tres-colunas.portaltype-service #portal-column-content,
 .secao-tres-colunas.portaltype-topic #portal-column-content,
-.secao-tres-colunas.portaltype-section #portal-column-content {
+.secao-tres-colunas.portaltype-section #portal-column-content{
   width: 506px;
   margin-left: -506px;
 }
@@ -52,16 +52,22 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 
 .secao-duas-colunas.portaltype-service #portal-column-one,
 .secao-duas-colunas.portaltype-topic #portal-column-one,
-.secao-duas-colunas.portaltype-section #portal-column-one {
+.secao-duas-colunas.portaltype-section #portal-column-one,
+.portaltype-topic #portal-column-one  {
   width: 371px;
   margin-top: 60px;
 }
 
 .secao-duas-colunas.portaltype-service #portal-column-content,
 .secao-duas-colunas.portaltype-topic #portal-column-content,
-.secao-duas-colunas.portaltype-section #portal-column-content {
+.secao-duas-colunas.portaltype-section #portal-column-content,
+.portaltype-topic #portal-column-content {
   width: 579px;
   margin-left: -579px;
+}
+.portaltype-topic .managePortletsLink{
+  margin-top: 5px;
+  clear: both;
 }
 
 .portletNavigationTree .navTreeLevel0 {
@@ -382,13 +388,8 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 
 /*/*Área de conteúdo*/
 
-.template-topic_view.section-cidadao #portal-columns,
-.template-topic_view.section-empresa #portal-columns,
-.template-topic_view.section-turista #portal-columns,
-.template-service_view.section-cidadao #portal-columns,
-.template-service_view.section-empresa #portal-columns,
-.template-service_view.section-turista #portal-columns,
-.template-edit.section-cidadao #portal-columns{
+.portaltype-topic #portal-columns,
+.portaltype-service #portal-columns{
   background: url("++resource++secoes.static/images/bg-checkers.png") repeat-x;
 }
 .section-cidadao #content .titulo_principal{
@@ -397,27 +398,11 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   margin-top: -12px;
   margin-left: -384px;
 }
-.userrole-authenticated.section-cidadao #content .titulo_principal{
-  background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -0 transparent;
-  height: 57px;
-  margin-top: -116px;
-  margin-left: -384px;
-  float: left;
-  width: 390px;
-}
 .section-empresa #content .titulo_principal{
   background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -65px transparent;
   height: 57px;
   margin-top: -12px;
   margin-left: -384px;
-}
-.userrole-authenticated.section-empresa #content .titulo_principal {
-  background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -65px transparent;
-  height: 57px;
-  margin-top: -116px;
-  margin-left: -384px;
-  float: left;
-  width: 390px;
 }
 .section-turista #content .titulo_principal{
   background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -130px transparent;
@@ -425,21 +410,29 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   margin-top: -12px;
   margin-left: -384px;
 }
-.userrole-authenticated.section-turista #content .titulo_principal {
-  background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -130px transparent;
+.userrole-authenticated.portaltype-topic #content .titulo_principal{
   height: 57px;
   margin-top: -116px;
   margin-left: -384px;
   float: left;
   width: 390px;
 }
+.userrole-authenticated.portaltype-service #content .titulo_principal{
+  margin-top: -134px;
+  float: left;
+  width: 100%;
+}
 .secao-tres-colunas #content .titulo_principal{
   margin-left: -457px !important;
 }
-.section-cidadao #edit-bar,
-.section-empresa #edit-bar,
-.section-turista #edit-bar{
+.portaltype-topic #edit-bar,
+.portaltype-service #edit-bar{
   margin-top: 60px;
+}
+.template-topic_view .portalMessage,
+.template-service_view .portalMessage{
+  position: absolute;
+  width: 100%;
 }
 .userrole-authenticated #content .titulo_principal h1{
   color: #FFF;
@@ -459,6 +452,13 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 #content .titulo_principal h1 span{
   text-transform: capitalize;
   font-weight: bold;
+}
+.userrole-authenticated #content #servicos{
+  background: #fff;
+  font-size: 1em;
+  padding-left: 22px;
+  padding-top: 16px;
+  margin-top: 45px;
 }
 #content #servicos{
   background: #fff;
@@ -505,4 +505,5 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   margin-top: 1em;
   text-decoration: none;
 }
+
 
