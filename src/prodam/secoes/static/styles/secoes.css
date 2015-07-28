@@ -4,7 +4,7 @@
 dl.portlet ul.navTree.navTreeLevel0 li a {
   border-left: 5px solid transparent;
   display: table;
-  width: 114px;
+  width: 125px;
 }
 
 dl.portlet ul.navTree.navTreeLevel0 li a:hover {
@@ -42,7 +42,6 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 }
 
 .portletNavigationTree ul {
-  float: left;
   overflow: hidden;
 }
 
@@ -65,7 +64,7 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 }
 
 .portletNavigationTree .navTreeLevel0 {
-  width: 180px;
+  width: 190px;
 }
 
 .portaltype-section .portletNavigationTree .navTreeLevel0 {
@@ -156,13 +155,6 @@ dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
   background: #BBB;
 
 }
-
-/* Customiza navegação de terceiro nível */
-
-.secao-tres-colunas .portletNavigationTree .navTreeLevel0 {
-  width: 62px;
-}
-
 
 /* Customiza navegação de quarto nível */
 
@@ -478,20 +470,20 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   overflow: hidden;
   width: 100%;
 }
-#content #servicos header h2{
+#content #servicos header h2 {
   text-transform: uppercase;
   letter-spacing: 0;
   font-size: 1.9em;
   line-height: normal;
 }
-#content #topicos img{
+#content #topicos img {
   float: right;
   margin-top: 3px;
   position: relative;
   z-index: -1;
   margin-right: 7px;
 }
-.pmsp-txt-dstaq-1{
+.pmsp-txt-dstaq-1 {
   margin: 20px 0;
   padding: 20px 20px;
   border: 1px dotted #b2b2b2;
@@ -506,3 +498,36 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   text-decoration: none;
 }
 
+
+/* ==========================================================================
+   Adaptações responsivas
+   ========================================================================== */
+
+
+@media only screen and (min-width : 480px) {
+
+}
+
+@media only screen and (min-width : 768px) {
+  #plone-content #portal-column-one .portletNavigationTree ul {
+    float: left;
+  }
+
+  .portletNavigationTree .navTreeLevel0 {
+    width: 180px;
+  }
+
+  dl.portlet ul.navTree.navTreeLevel0 li a {
+    width: 114px;
+  }
+  /* Customiza navegação de terceiro nível */
+
+  .secao-tres-colunas .portletNavigationTree .navTreeLevel0 {
+    width: 62px;
+  }
+
+}
+
+@media only screen and (min-width : 992px) {
+
+}
