@@ -25,8 +25,9 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 .secao-tres-colunas.portaltype-topic #portal-column-content,
 .secao-tres-colunas.portaltype-section #portal-column-content {
   width: 100%;
-  margin-left: -100%;
+  margin-left: 0;
   clear: both;
+  position: static;
 }
 
 
@@ -62,8 +63,10 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 .secao-duas-colunas.portaltype-topic #portal-column-content,
 .secao-duas-colunas.portaltype-section #portal-column-content,
 .portaltype-topic #portal-column-content {
-  width: 579px;
-  margin-left: -579px;
+  width: 100%;
+  margin-left: 0;
+  clear: both;
+  position: static;
 }
 .portaltype-topic .managePortletsLink{
   margin-top: 5px;
@@ -387,40 +390,45 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 }
 .section-cidadao #content .titulo_principal{
   background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 0 transparent;
+  position: absolute;
   height: 57px;
-  margin-top: -12px;
-  margin-left: -384px;
+  margin:0;
+  top: 0;
+  left: 0;
+  width: 100%
 }
 .section-empresa #content .titulo_principal{
   background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -65px transparent;
+  position: absolute;
   height: 57px;
-  margin-top: -12px;
-  margin-left: -384px;
+  margin:0;
+  top: 0;
+  left: 0;
+  width: 100%
 }
 .section-turista #content .titulo_principal{
   background: url("++resource++secoes.static/images/header-page.png") no-repeat 0 -130px transparent;
+  position: absolute;
   height: 57px;
-  margin-top: -12px;
-  margin-left: -384px;
+  margin:0;
+  top: 0;
+  left: 0;
+  width: 100%
 }
 .userrole-authenticated.portaltype-topic #content .titulo_principal{
   height: 57px;
-  margin-top: -116px;
-  margin-left: -384px;
-  float: left;
-  width: 390px;
-}
-.userrole-authenticated.portaltype-service #content .titulo_principal{
-  margin-top: -134px;
-  float: left;
+  margin:0;
+  top: 0;
+  left: 0;
+  position: absolute;
   width: 100%;
 }
-.secao-tres-colunas #content .titulo_principal{
-  margin-left: -457px !important;
-}
-.portaltype-topic #edit-bar,
-.portaltype-service #edit-bar{
-  margin-top: 60px;
+.userrole-authenticated.portaltype-service #content .titulo_principal{
+  margin:0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 .template-topic_view .portalMessage,
 .template-service_view .portalMessage{
@@ -441,6 +449,7 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   font-weight: normal;
   padding:8px 0 0 29px;
   font-size: 1.95em;
+  margin:0;
 }
 #content .titulo_principal h1 span{
   text-transform: capitalize;
@@ -483,6 +492,9 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   position: relative;
   z-index: -1;
   margin-right: 7px;
+}
+.userrole-anonymous #content #topicos img{
+  margin-top: -25px;
 }
 .pmsp-txt-dstaq-1 {
   margin: 20px 0;
@@ -536,6 +548,42 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
     width: 506px;
     margin-left: -506px;
     clear: none;
+    position: absolute;
+    margin-top: 60px;
   }
-
+  .secao-duas-colunas.portaltype-service #portal-column-content,
+  .secao-duas-colunas.portaltype-topic #portal-column-content,
+  .secao-duas-colunas.portaltype-section #portal-column-content {
+    width: 579px;
+    margin-left: -579px;
+    clear: none;
+    position: absolute;
+    margin-top: 60px;
+  }
+  .portaltype-service #content .titulo_principal,
+  .portaltype-topic #content .titulo_principal{
+    margin-left: -384px;
+    position: absolute;
+    margin-top: -60px;
+  }
+  .portaltype-service.secao-tres-colunas #content .titulo_principal,
+  .portaltype-topic.secao-tres-colunas #content .titulo_principal{
+    margin-left: -454px;
+    position: absolute;
+    margin-top: -60px;
+  }
+  .userrole-authenticated.portaltype-topic #content .titulo_principal,
+  .userrole-authenticated.portaltype-service #content .titulo_principal{
+    margin-left: -384px;
+    float: left;
+    width: 390px;
+    margin-top: -60px;
+  }
+  .userrole-authenticated.portaltype-topic.secao-tres-colunas #content .titulo_principal,
+  .userrole-authenticated.portaltype-service.secao-tres-colunas #content .titulo_principal{
+    margin-left: -454px;
+    float: left;
+    width: 100%;
+    margin-top: -60px;
+  }
 }
