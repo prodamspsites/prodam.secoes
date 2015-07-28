@@ -548,7 +548,7 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
     width: 506px;
     margin-left: -506px;
     clear: none;
-    position: absolute;
+    position: relative;
     margin-top: 60px;
   }
   .secao-duas-colunas.portaltype-service #portal-column-content,
