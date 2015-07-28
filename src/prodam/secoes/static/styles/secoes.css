@@ -24,8 +24,9 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 .secao-tres-colunas.portaltype-service #portal-column-content,
 .secao-tres-colunas.portaltype-topic #portal-column-content,
 .secao-tres-colunas.portaltype-section #portal-column-content {
-  width: 506px;
-  margin-left: -506px;
+  width: 100%;
+  margin-left: -100%;
+  clear: both;
 }
 
 
@@ -529,5 +530,12 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 }
 
 @media only screen and (min-width : 992px) {
+  .secao-tres-colunas.portaltype-service #portal-column-content,
+  .secao-tres-colunas.portaltype-topic #portal-column-content,
+  .secao-tres-colunas.portaltype-section #portal-column-content {
+    width: 506px;
+    margin-left: -506px;
+    clear: none;
+  }
 
 }
