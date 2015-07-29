@@ -491,7 +491,7 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   margin-top: 3px;
   position: relative;
   z-index: -1;
-  margin-right: 7px;
+  margin-right: -5px;
 }
 .userrole-anonymous #content #topicos img{
   margin-top: -25px;
