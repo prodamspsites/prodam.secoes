@@ -14,7 +14,7 @@ class TopicView(BrowserView):
             if not context.hasProperty('secaoImagem'):
                 context.manage_addProperty(id='secaoImagem', type='string', value=path)
         else:
-            if context.hasProperty('secaoImagem'):
+            if context.secaoImagem:
                 path = context.secaoImagem
 
         return path
