@@ -18,6 +18,7 @@
   <!-- Suporte ao Generic Setup-->
   <include file="profiles.zcml" />
   <include package=".portlets" />
+  <include package=".browser" />
 
   <!-- Registra pasta de traducoes -->
   <i18n:registerTranslations directory="locales" />

@@ -8,12 +8,13 @@
 
   <metal:content-core fill-slot="main">
     <metal:block define-macro="main">
-      <header class="titulo_principal" tal:define="section python:context.getPhysicalPath()[2]">
+      <header class="titulo_principal" tal:define="section python:context.secao">
         <h1>Serviços para <span class="section_servicos" tal:content="section" /></h1>
       </header>
-      <div id="topicos">
-        <tal:hasImage tal:condition="exists:context/@@images/image">
-          <span tal:replace="structure context/@@images/image" />
+      <div id="topicos" tal:define="propriedade context/secaoImagem | nothing;
+                                    imagem python:context.image">
+        <tal:hasImage tal:condition="python:propriedade or imagem">
+          <img src="imagem.jpg" tal:attributes="src view/getImage" />
         </tal:hasImage>
       </div>
     </metal:block>
