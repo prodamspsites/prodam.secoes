@@ -5,6 +5,7 @@ Alterações
 0.5 (unreleased)
 ^^^^^^^^^^^^^^^^
 * Responsividade das seções [wblima]
+* A view de tópico passa a herdar imagem do item pai [mosesjr]
 * Ajusta posicionamento imagem de funco de tópico [dadlo]
 * Estiliza área de conteúdo de seções [wblima]
 * Cria pasta assets e images [mosesjr]
