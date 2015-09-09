@@ -4,6 +4,7 @@ Alterações
 
 0.5 (unreleased)
 ^^^^^^^^^^^^^^^^
+* Corrige estilo do menu [vbrosso]
 * Responsividade das seções [wblima]
 * A view de tópico passa a herdar imagem do item pai [mosesjr]
 * Ajusta posicionamento imagem de funco de tópico [dadlo]
