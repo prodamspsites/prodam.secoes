@@ -145,6 +145,7 @@ dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
   border-bottom: 1px solid #c4c4c4;
   font-size: 1em;
   margin: 0;
+  padding-left: 15px;
 }
 
 .portletNavigationTree .navTreeLevel1 li a,
@@ -152,15 +153,17 @@ dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
 .portletNavigationTree .navTreeLevel3 li a {
   color: #333;
   padding: 12px 0;
-  padding-left: 16px;
-  display: inline-block;
+  display: inline-block !important;
   background: transparent;
 }
 
-.portletNavigationTree .navTreeLevel1 li a:hover,
-.portletNavigationTree .navTreeLevel2 li a:hover,
-.portletNavigationTree .navTreeLevel3 li a:hover,
-.portletNavigationTree .navTreeLevel1 li a.navTreeCurrentNode {
+.portletNavigationTree .navTreeLevel1 li:hover,
+.portletNavigationTree .navTreeLevel2 li:hover,
+.portletNavigationTree .navTreeLevel3 li:hover,
+.portletNavigationTree .navTreeLevel1 li.treeCurrentItem, 
+.portletNavigationTree .navTreeLevel2 li.treeCurrentItem, 
+.portletNavigationTree .navTreeLevel1 li.navTreeItemInPath,
+.portletNavigationTree .navTreeLevel2 li.navTreeItemInPath{
   color: red !important;
   background: #BBB;
 
