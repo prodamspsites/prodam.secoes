@@ -160,8 +160,8 @@ dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
 .portletNavigationTree .navTreeLevel1 li:hover,
 .portletNavigationTree .navTreeLevel2 li:hover,
 .portletNavigationTree .navTreeLevel3 li:hover,
-.portletNavigationTree .navTreeLevel1 li.treeCurrentItem, 
-.portletNavigationTree .navTreeLevel2 li.treeCurrentItem, 
+.portletNavigationTree .navTreeLevel1 li.treeCurrentItem,
+.portletNavigationTree .navTreeLevel2 li.treeCurrentItem,
 .portletNavigationTree .navTreeLevel1 li.navTreeItemInPath,
 .portletNavigationTree .navTreeLevel2 li.navTreeItemInPath{
   color: red !important;
