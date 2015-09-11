@@ -163,7 +163,6 @@ dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
 .portletNavigationTree .navTreeLevel1 li a.navTreeCurrentNode {
   color: red !important;
   background: #BBB;
-
 }
 
 /* Customiza navegação de quarto nível */
