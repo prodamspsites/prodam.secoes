@@ -134,8 +134,23 @@ dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
   width: 190px;
   border: 1px solid #8d8d8d;
   margin-left: -1px;
-  list-style: disc inside;
+}
+.navTreeLevel1 li, .navTreeLevel2 li{
+  position:relative;
+}
+.navTreeLevel1 li:before, .navTreeLevel2 li:before{
+  content: "";
+  position:absolute;
+  top: 18px;
+  left: 9px;
+  font-size: 33px;
   color: #f00;
+  width: 6px;
+  height: 6px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #f00;
 }
 
 .portletNavigationTree .navTreeLevel1 li,
@@ -152,12 +167,14 @@ dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
 .portletNavigationTree .navTreeLevel2 li a,
 .portletNavigationTree .navTreeLevel3 li a {
   color: #333;
-  padding: 12px 0;
+  padding: 12px 0 12px 11px;
   display: inline-block !important;
   background: transparent;
+  width: 150px;
 }
 
 .portletNavigationTree .navTreeLevel1 li:hover,
+.portletNavigationTree .navTreeLevel1 li a:hover,
 .portletNavigationTree .navTreeLevel2 li:hover,
 .portletNavigationTree .navTreeLevel3 li:hover,
 .portletNavigationTree .navTreeLevel1 li.treeCurrentItem,
