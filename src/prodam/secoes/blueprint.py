@@ -8,8 +8,6 @@ import pprint
 class Fields(object):
     classProvides(ISectionBlueprint)
     implements(ISection)
-    import pdb
-    pdb.set_trace()
 
     def __init__(self, transmogrifier, name, options, previous):
         self.previous = previous
