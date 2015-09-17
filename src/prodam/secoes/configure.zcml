@@ -3,6 +3,7 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:transmogrifier="http://namespaces.plone.org/transmogrifier"
     i18n_domain="prodam.secoes">
 
   <includeDependencies package="." />
@@ -16,9 +17,18 @@
       />
 
   <!-- Suporte ao Generic Setup-->
+  <include package="collective.transmogrifier" />
+  <include package="collective.transmogrifier" file="meta.zcml" />
+  <include package="plone.app.transmogrifier" />
   <include file="profiles.zcml" />
   <include package=".portlets" />
   <include package=".browser" />
+
+  <transmogrifier:registerConfig
+        name="prodam.secoes.conteudo"
+        title="Conteudo inicial do portal"
+        configuration="migration.cfg"
+        />
 
   <!-- Registra pasta de traducoes -->
   <i18n:registerTranslations directory="locales" />
@@ -31,5 +41,21 @@
       name="secoes.static"
       directory="static"
       />
+
+  <utility
+      component=".sqlquery.Query"
+      name="prodam.secoes.sql"
+      />
+
+  <utility
+      component=".blueprint.Fields"
+      name="prodam.secoes.fields"
+      />
+
+  <utility
+      component=".blueprint.Create"
+      name="prodam.secoes.create"
+      />
+
 
 </configure>

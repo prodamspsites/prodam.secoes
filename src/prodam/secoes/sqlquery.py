@@ -1,9 +1,9 @@
 from collective.transmogrifier.interfaces import ISection
 from collective.transmogrifier.interfaces import ISectionBlueprint
+from zope.component import provideUtility
 from zope.interface import classProvides
 from zope.interface import implements
-from zope.component import provideUtility
-import json, pprint, os
+import pprint
 
 
 class Query(object):
@@ -15,10 +15,9 @@ class Query(object):
         self.pprint = pprint.PrettyPrinter().pprint
 
     def __iter__(self):
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         for item in self.previous:
             self.pprint(sorted(item.items()))
             yield item
 
-provideUtility(Query,
-               name=u'collective.transmogrifier.tests.exampleconstructor')
+provideUtility(Query, name=u'collective.transmogrifier.tests.exampleconstructor')
