@@ -6,7 +6,7 @@ from prodam.secoes.interfaces import IBrowserLayer
 from prodam.secoes.testing import FUNCTIONAL_TESTING
 from prodam.secoes.testing import INTEGRATION_TESTING
 
-import unittest2 as unittest
+import unittest
 
 
 class Plone43TestCase(unittest.TestCase):
