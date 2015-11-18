@@ -4,6 +4,8 @@ Alterações
 
 0.5 (unreleased)
 ^^^^^^^^^^^^^^^^
+* Torna navegação de secões assíncrona [mosesjr]
+* Adiciona arquivo de javascript secoes.js [mosesjr]
 * Corrige estilo do menu [vbrosso]
 * Responsividade das seções [wblima]
 * A view de tópico passa a herdar imagem do item pai [mosesjr]
