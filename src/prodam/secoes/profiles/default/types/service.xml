@@ -10,7 +10,9 @@
  <property name="immediate_view">view</property>
  <property name="global_allow">False</property>
  <property name="filter_content_types">True</property>
- <property name="allowed_content_types"/>
+ <property name="allowed_content_types">
+  <element value="geolocalizacao"/>
+ </property>
  <property name="allow_discussion">False</property>
  <property name="default_view">service_view</property>
  <property name="view_methods">
@@ -31,13 +33,13 @@
  <property name="schema"></property>
  <property
     name="model_source">&lt;model xmlns:i18n="http://xml.zope.org/namespaces/i18n" xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
-    &lt;schema&gt;
-      &lt;field name="conteudo" type="plone.app.textfield.RichText"&gt;
-        &lt;description/&gt;
-        &lt;required&gt;False&lt;/required&gt;
-        &lt;title&gt;Conte&amp;#250;do&lt;/title&gt;
-      &lt;/field&gt;
-    &lt;/schema&gt;
+  &lt;schema&gt;
+  &lt;field name="conteudo" type="plone.app.textfield.RichText"&gt;
+  &lt;description/&gt;
+  &lt;required&gt;False&lt;/required&gt;
+  &lt;title&gt;Conte&amp;#250;do&lt;/title&gt;
+  &lt;/field&gt;
+  &lt;/schema&gt;
   &lt;/model&gt;</property>
  <property name="model_file"></property>
  <property name="schema_policy">dexterity</property>
