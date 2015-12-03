@@ -576,8 +576,8 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   .secao-tres-colunas.portaltype-service #portal-column-content,
   .secao-tres-colunas.portaltype-topic #portal-column-content,
   .secao-tres-colunas.portaltype-section #portal-column-content {
-    width: 506px;
-    margin-left: -506px;
+    width: 497px;
+    margin-left: -497px;
     clear: none;
     position: relative;
     margin-top: 60px;
@@ -585,34 +585,34 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   .secao-duas-colunas.portaltype-service #portal-column-content,
   .secao-duas-colunas.portaltype-topic #portal-column-content,
   .secao-duas-colunas.portaltype-section #portal-column-content {
-    width: 579px;
-    margin-left: -579px;
+    width: 570px;
+    margin-left: -570px;
     clear: none;
     position: absolute;
     margin-top: 60px;
   }
   .portaltype-service #content .titulo_principal,
   .portaltype-topic #content .titulo_principal{
-    margin-left: -384px;
+    margin-left: -370px;
     position: absolute;
     margin-top: -60px;
   }
   .portaltype-service.secao-tres-colunas #content .titulo_principal,
   .portaltype-topic.secao-tres-colunas #content .titulo_principal{
-    margin-left: -454px;
+    margin-left: -443px;
     position: absolute;
     margin-top: -60px;
   }
   .userrole-authenticated.portaltype-topic #content .titulo_principal,
   .userrole-authenticated.portaltype-service #content .titulo_principal{
-    margin-left: -384px;
+    margin-left: -370px;
     float: left;
     width: 390px;
     margin-top: -60px;
   }
   .userrole-authenticated.portaltype-topic.secao-tres-colunas #content .titulo_principal,
   .userrole-authenticated.portaltype-service.secao-tres-colunas #content .titulo_principal{
-    margin-left: -454px;
+    margin-left: -443px;
     float: left;
     width: 100%;
     margin-top: -60px;
