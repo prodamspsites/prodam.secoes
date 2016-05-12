@@ -588,7 +588,7 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
     width: 579px;
     margin-left: -579px;
     clear: none;
-    position: absolute;
+    position: relative;
     margin-top: 60px;
   }
   .portaltype-service #content .titulo_principal,
