@@ -17,6 +17,7 @@ class Renderer(BaseRenderer):
             elif '${portal_url}' in str(remoteUrl):
                 item['getRemoteUrl'] = remoteUrl.replace(
                     '${navigation_root_url}', navroot_url)
+            
         return data
 
     def createNavTree(self):

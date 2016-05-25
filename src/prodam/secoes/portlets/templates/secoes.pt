@@ -7,6 +7,7 @@
 
     <tal:navitem repeat="node children">
       <tal:teste tal:define="show_children node/show_children;
+                node_id         node/normalized_id;
                 children        node/children;
                 item_url        node/getURL;
                 item_remote_url node/getRemoteUrl;
@@ -35,12 +36,27 @@
               </a>
             </tal:notLink>
 
-            <tal:Link condition="python:item_type == 'Link'">
-              <a tal:attributes="href python:item_remote_url;
+            <tal:Link condition="python:item_type == 'Link'" >
+
+               <tal:target tal:define="link python:context.portal_catalog(portal_type= 'Link',id= node_id)[0]; res python:link.getObject()" tal:condition="res/target"  >
+              <a  tal:attributes="href python:item_remote_url; 
+                                 target string:_blank;
                                  title node/Description;
                                  class string:$item_class${li_class}${li_folder_class} $item_type_class">
                   <span tal:content="node/Title">Selected Item Title</span>
               </a>
+
+                </tal:target>
+
+             <tal:notarget tal:define="link python:context.portal_catalog(portal_type= 'Link',id= node_id)[0]; res python:link.getObject()" tal:condition="not:res/target" >
+              <a  tal:attributes="href python:item_remote_url;
+                                 title node/Description;
+                                 target string:_self;
+                                 class string:$item_class${li_class}${li_folder_class} $item_type_class">
+                  <span tal:content="node/Title">Selected Item Title</span>
+              </a>
+            </tal:notarget>
+
             </tal:Link>
 
             <tal:children condition="python: len(children) > 0 and level > 2">

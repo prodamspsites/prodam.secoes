@@ -51,13 +51,21 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 
 /* Customiza navegação de primeiro nível */
 
-.secao-duas-colunas.portaltype-service #portal-column-one,
+/*.secao-duas-colunas.portaltype-service #portal-column-one,
 .secao-duas-colunas.portaltype-topic #portal-column-one,
 .secao-duas-colunas.portaltype-section #portal-column-one,
 .portaltype-topic #portal-column-one  {
   width: 371px;
   margin-top: 60px;
+}*/
+.secao-duas-colunas.portaltype-service #portal-column-one,
+.secao-duas-colunas.portaltype-topic #portal-column-one,
+.secao-duas-colunas.portaltype-section #portal-column-one,
+.portaltype-topic #portal-column-one  {
+  width: 373px;
+  margin-top: 60px;
 }
+
 
 .secao-duas-colunas.portaltype-service #portal-column-content,
 .secao-duas-colunas.portaltype-topic #portal-column-content,
