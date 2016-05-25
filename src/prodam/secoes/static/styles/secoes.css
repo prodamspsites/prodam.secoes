@@ -13,14 +13,24 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 
 
 /* Redefine largura das colunas */
-
+/*.secao-tres-colunas.portaltype-link #portal-column-one,
 .secao-tres-colunas.portaltype-service #portal-column-one,
 .secao-tres-colunas.portaltype-topic #portal-column-one,
 .secao-tres-colunas.portaltype-section #portal-column-one{
   width: 444px;
   margin-top: 60px;
 }
+*/
+.secao-tres-colunas.portaltype-link #portal-column-one,
+.secao-tres-colunas.portaltype-service #portal-column-one,
+.secao-tres-colunas.portaltype-topic #portal-column-one,
+.secao-tres-colunas.portaltype-section #portal-column-one{
+  width: 446px;
+  margin-top: 60px;
+}
 
+
+.secao-tres-colunas.portaltype-link #portal-column-content,
 .secao-tres-colunas.portaltype-service #portal-column-content,
 .secao-tres-colunas.portaltype-topic #portal-column-content,
 .secao-tres-colunas.portaltype-section #portal-column-content {
@@ -58,6 +68,7 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
   width: 371px;
   margin-top: 60px;
 }*/
+.secao-duas-colunas.portaltype-link #portal-column-one,
 .secao-duas-colunas.portaltype-service #portal-column-one,
 .secao-duas-colunas.portaltype-topic #portal-column-one,
 .secao-duas-colunas.portaltype-section #portal-column-one,
@@ -422,7 +433,7 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 }
 
 /*/*Área de conteúdo*/
-
+.portaltype-link #portal-columns,
 .portaltype-topic #portal-columns,
 .portaltype-service #portal-columns{
   background: url("++resource++secoes.static/images/bg-checkers.png") repeat-x;
@@ -453,6 +464,15 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
   top: 0;
   left: 0;
   width: 100%
+}
+
+.userrole-authenticated.portaltype-link #content .titulo_principal{
+  height: 57px;
+  margin:0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 .userrole-authenticated.portaltype-topic #content .titulo_principal{
   height: 57px;
@@ -581,6 +601,7 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 }
 
 @media only screen and (min-width : 992px) {
+  .secao-tres-colunas.portaltype-link #portal-column-content,
   .secao-tres-colunas.portaltype-service #portal-column-content,
   .secao-tres-colunas.portaltype-topic #portal-column-content,
   .secao-tres-colunas.portaltype-section #portal-column-content {
@@ -590,6 +611,7 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
     position: relative;
     margin-top: 60px;
   }
+  .secao-duas-colunas.portaltype-link #portal-column-content,
   .secao-duas-colunas.portaltype-service #portal-column-content,
   .secao-duas-colunas.portaltype-topic #portal-column-content,
   .secao-duas-colunas.portaltype-section #portal-column-content {
@@ -611,6 +633,7 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
     position: absolute;
     margin-top: -60px;
   }
+  .userrole-authenticated.portaltype-link #content .titulo_principal,
   .userrole-authenticated.portaltype-topic #content .titulo_principal,
   .userrole-authenticated.portaltype-service #content .titulo_principal{
     margin-left: -384px;
@@ -618,6 +641,7 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
     width: 390px;
     margin-top: -60px;
   }
+  .userrole-authenticated.portaltype-link.secao-tres-colunas #content .titulo_principal,
   .userrole-authenticated.portaltype-topic.secao-tres-colunas #content .titulo_principal,
   .userrole-authenticated.portaltype-service.secao-tres-colunas #content .titulo_principal{
     margin-left: -454px;
