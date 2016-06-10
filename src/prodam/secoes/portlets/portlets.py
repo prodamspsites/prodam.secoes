@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.portlets.portlets.navigation import Renderer as BaseRenderer
+from plone.app.uuid.utils import uuidToObject
 
 
 class Renderer(BaseRenderer):
+
+    def getLinkObject(self, linkUID):
+        obj = uuidToObject(linkUID)
+        return obj or False
+
 
     def process_navigation(self, data):
         ''' '''

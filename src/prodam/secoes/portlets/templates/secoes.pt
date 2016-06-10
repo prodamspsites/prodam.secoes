@@ -36,26 +36,14 @@
               </a>
             </tal:notLink>
 
-            <tal:Link condition="python:item_type == 'Link'" >
-
-               <tal:target tal:define="link python:context.portal_catalog(portal_type= 'Link',id= node_id)[0]; res python:link.getObject()" tal:condition="res/target"  >
-              <a  tal:attributes="href python:item_remote_url; 
-                                 target string:_blank;
+            <tal:Link condition="python:item_type == 'Link'">
+              <a tal:define="linkObj python:view.getLinkObject(node['UID'])"
+                 tal:attributes="href python:item_remote_url; 
+                                 target python: linkObj.target and '_blank' or '_self';
                                  title node/Description;
                                  class string:$item_class${li_class}${li_folder_class} $item_type_class">
                   <span tal:content="node/Title">Selected Item Title</span>
               </a>
-
-                </tal:target>
-
-             <tal:notarget tal:define="link python:context.portal_catalog(portal_type= 'Link',id= node_id)[0]; res python:link.getObject()" tal:condition="not:res/target" >
-              <a  tal:attributes="href python:item_remote_url;
-                                 title node/Description;
-                                 target string:_self;
-                                 class string:$item_class${li_class}${li_folder_class} $item_type_class">
-                  <span tal:content="node/Title">Selected Item Title</span>
-              </a>
-            </tal:notarget>
 
             </tal:Link>
 
