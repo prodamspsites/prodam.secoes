@@ -11,7 +11,7 @@
         />
 
     <browser:page
-        name="section_view"
+        name="portalsection_view"
         for="*"
         class=".view.SectionView"
         template="templates/section_view.pt"

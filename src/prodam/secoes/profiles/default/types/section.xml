@@ -17,9 +17,9 @@
   <element value="collective.cover.content"/>
  </property>
  <property name="allow_discussion">False</property>
- <property name="default_view">section_view</property>
+ <property name="default_view">portalsection_view</property>
  <property name="view_methods">
-  <element value="section_view"/>
+  <element value="portalsection_view"/>
  </property>
  <property name="default_view_fallback">False</property>
  <property name="add_permission">cmf.AddPortalContent</property>
