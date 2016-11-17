@@ -577,7 +577,6 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 
 
 @media only screen and (min-width : 480px) {
-
 }
 
 @media only screen and (min-width : 768px) {
@@ -601,7 +600,7 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 }
 
 @media only screen and (min-width : 992px) {
-  #plone-content #portal-column-one .portletNavigationTree ul {
+  .portletNavigationTree .navTreeLevel0 {
     float: left;
   }
 
