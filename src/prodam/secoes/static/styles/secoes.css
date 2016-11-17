@@ -73,7 +73,7 @@ dl.portlet ul.navTree.navTreeLevel0 li a:hover {
 .secao-duas-colunas.portaltype-topic #portal-column-one,
 .secao-duas-colunas.portaltype-section #portal-column-one,
 .portaltype-topic #portal-column-one  {
-  width: 373px;
+  width: 383px;
   margin-top: 60px;
 }
 
@@ -601,6 +601,10 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 }
 
 @media only screen and (min-width : 992px) {
+  #plone-content #portal-column-one .portletNavigationTree ul {
+    float: left;
+  }
+
   .secao-tres-colunas.portaltype-link #portal-column-content,
   .secao-tres-colunas.portaltype-service #portal-column-content,
   .secao-tres-colunas.portaltype-topic #portal-column-content,
