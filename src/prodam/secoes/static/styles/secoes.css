@@ -599,7 +599,7 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 
 }
 
-@media only screen and (min-width : 992px) {
+@media only all and (min-width : 992px) {
   .portletNavigationTree .navTreeLevel0 {
     float: left;
   }
