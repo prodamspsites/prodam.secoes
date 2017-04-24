@@ -241,73 +241,73 @@ dl.portlet ul.navTree.navTreeLevel0 li.treeCurrentItem a {
 /* Ícones do primeiro nível de menu */
 
 dl.portlet ul.navTree.navTreeLevel0 li.casa-e-moradia a {
-  background-image: url("++resource++secoes.static/images/cid-casa-mini.png");
+  /*background-image: url("++resource++secoes.static/images/cid-casa-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 dl.portlet ul.navTree.navTreeLevel0 li.rua-e-bairro a {
-  background-image: url("++resource++secoes.static/images/cid-rua-mini.png");
+  /*background-image: url("++resource++secoes.static/images/cid-rua-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 dl.portlet ul.navTree.navTreeLevel0 li.familia-e-assistencia-social a {
-  background-image: url("++resource++secoes.static/images/cid-familia-mini.png");
+  /*background-image: url("++resource++secoes.static/images/cid-familia-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 dl.portlet ul.navTree.navTreeLevel0 li.transportes a {
-  background-image: url("++resource++secoes.static/images/cid-transportes-mini.png");
+  /*background-image: url("++resource++secoes.static/images/cid-transportes-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 dl.portlet ul.navTree.navTreeLevel0 li.financas a {
-  background-image: url("++resource++secoes.static/images/cid-financas-mini.png");
+  /*background-image: url("++resource++secoes.static/images/cid-financas-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 dl.portlet ul.navTree.navTreeLevel0 li.trabalho a {
-  background-image: url("++resource++secoes.static/images/cid-seguranca-mini.png");
+  /*background-image: url("++resource++secoes.static/images/cid-seguranca-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 dl.portlet ul.navTree.navTreeLevel0 li.saude-e-bem-estar a {
-  background-image: url("++resource++secoes.static/images/cid-saude-mini.png");
+  /*background-image: url("++resource++secoes.static/images/cid-saude-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 dl.portlet ul.navTree.navTreeLevel0 li.educacao a {
-  background-image: url("++resource++secoes.static/images/cid-educacao-mini.png");
+  /*background-image: url("++resource++secoes.static/images/cid-educacao-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 dl.portlet ul.navTree.navTreeLevel0 li.cultura a {
-  background-image: url("++resource++secoes.static/images/cid-cultura-mini.png");
+  /*background-image: url("++resource++secoes.static/images/cid-cultura-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 dl.portlet ul.navTree.navTreeLevel0 li.esportes-e-lazer a {
-  background-image: url("++resource++secoes.static/images/cid-esportes-mini.png");
+  /*background-image: url("++resource++secoes.static/images/cid-esportes-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 dl.portlet ul.navTree.navTreeLevel0 li.animais a {
-  background-image: url("++resource++secoes.static/images/cid-animais-mini.png");
+  /*background-image: url("++resource++secoes.static/images/cid-animais-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
-  background-image: url("++resource++secoes.static/images/cid-trabalho-mini.png");
+  /*background-image: url("++resource++secoes.static/images/cid-trabalho-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
@@ -316,73 +316,73 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 /* Empresa */
 
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li.abertura-de-empresas a {
-  background-image: url("++resource++secoes.static/images/emp-empresas-mini.png");
+  /*background-image: url("++resource++secoes.static/images/emp-empresas-mini.png");*/
   background-position:  7px 10px;
   background-repeat: no-repeat;
 }
 
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li.nota-fiscal-paulistana a {
-  background-image: url("++resource++secoes.static/images/emp-nota-mini.png");
+  /*background-image: url("++resource++secoes.static/images/emp-nota-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li.programas-e-beneficios a {
-  background-image: url("++resource++secoes.static/images/emp-programas-mini.png");
+  /*background-image: url("++resource++secoes.static/images/emp-programas-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li.alvaras-certidoes-e-licencas a {
-  background-image: url("++resource++secoes.static/images/emp-alvara-mini.png");
+  /*background-image: url("++resource++secoes.static/images/emp-alvara-mini.png");*/
   background-position:  7px 5px;
   background-repeat: no-repeat;
 }
 
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li.impostos-e-taxas a {
-  background-image: url("++resource++secoes.static/images/emp-impostos-mini.png");
+  /*background-image: url("++resource++secoes.static/images/emp-impostos-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li.cadastros a {
-  background-image: url("++resource++secoes.static/images/emp-cadastros-mini.png");
+  /*background-image: url("++resource++secoes.static/images/emp-cadastros-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li.licitacoes-e-fornecedores a {
-  background-image: url("++resource++secoes.static/images/emp-licitacoes-mini.png");
+  /*background-image: url("++resource++secoes.static/images/emp-licitacoes-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li.consultas-declaracoes-e-normas a {
-  background-image: url("++resource++secoes.static/images/emp-consultas-mini.png");
+  /*background-image: url("++resource++secoes.static/images/emp-consultas-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li.legislacao a {
-  background-image: url("++resource++secoes.static/images/emp-cursos-mini.png");
+  /*background-image: url("++resource++secoes.static/images/emp-cursos-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li.empreendedorismo a {
-  background-image: url("++resource++secoes.static/images/emp-empreendedor-mini.png");
+  /*background-image: url("++resource++secoes.static/images/emp-empreendedor-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li.oportunidades a {
-  background-image: url("++resource++secoes.static/images/emp-oportunidades-mini.png");
+  /*background-image: url("++resource++secoes.static/images/emp-oportunidades-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-empresa dl.portlet ul.navTree.navTreeLevel0 li.cursos a {
-  background-image: url("++resource++secoes.static/images/emp-cursos-mini.png");
+  /*background-image: url("++resource++secoes.static/images/emp-cursos-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
@@ -391,43 +391,43 @@ dl.portlet ul.navTree.navTreeLevel0 li.seguranca a {
 /* Turista */
 
 .section-turista dl.portlet ul.navTree.navTreeLevel0 li.compras a {
-  background-image: url("++resource++secoes.static/images/tur-compras-mini.png");
+  /*background-image: url("++resource++secoes.static/images/tur-compras-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-turista dl.portlet ul.navTree.navTreeLevel0 li.gastronomia a {
-  background-image: url("++resource++secoes.static/images/tur-gastronomia-mini.png");
+ /* background-image: url("++resource++secoes.static/images/tur-gastronomia-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-turista dl.portlet ul.navTree.navTreeLevel0 li.noite a {
-  background-image: url("++resource++secoes.static/images/tur-noite-mini.png");
+  /*background-image: url("++resource++secoes.static/images/tur-noite-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-turista dl.portlet ul.navTree.navTreeLevel0 li.negocios a {
-  background-image: url("++resource++secoes.static/images/tur-negocios-mini.png");
+  /*background-image: url("++resource++secoes.static/images/tur-negocios-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-turista dl.portlet ul.navTree.navTreeLevel0 li.atracoes a {
-  background-image: url("++resource++secoes.static/images/tur-atracoes-mini.png");
+  /*background-image: url("++resource++secoes.static/images/tur-atracoes-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-turista dl.portlet ul.navTree.navTreeLevel0 li.roteiros a {
-  background-image: url("++resource++secoes.static/images/tur-roteiros-mini.png");
+  /*background-image: url("++resource++secoes.static/images/tur-roteiros-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }
 
 .section-turista dl.portlet ul.navTree.navTreeLevel0 li.informacoes a {
-  background-image: url("++resource++secoes.static/images/tur-informacoes-mini.png");
+  /*background-image: url("++resource++secoes.static/images/tur-informacoes-mini.png");*/
   background-position:  7px 6px;
   background-repeat: no-repeat;
 }

@@ -24,14 +24,20 @@
 
         <tal:level define="item_class string:topico;
                            item_type_class python:normalizeString(item_type);
-                           item_class python:is_current and item_class + ' treeCurrentItem' or item_class;">
+                           item_class python:is_current and item_class + ' treeCurrentItem' or item_class;
+                            obj node/item; prop python:obj.getObject();
+                           incluir_imagem python:True if prop.icone != None and level == 1  else False">
 
           <li class="" tal:attributes="class string:${node/id} ${item_type} ${item_class} ${li_extr_class} level${level}">
 
+
+<tal:icone tal:condition="python:incluir_imagem == True" tal:define="url_icone python: view.getUrlIcone(prop)">
             <tal:notLink condition="python:item_type != 'Link'">
               <a tal:attributes="href python:use_remote_url and item_remote_url or item_url;
                                  title node/Description;
-                                 class string:$item_class${li_class}${li_folder_class} $item_type_class">
+                                 class string:$item_class${li_class}${li_folder_class} $item_type_class;
+                                 ">
+                             <img  tal:attributes="src string:${url_icone}" width="40" height="40" style="display: table-cell; vertical-align: middle; margin-left: -50px; margin-top: 10px;" />
                   <span tal:content="node/Title">Selected Item Title</span>
               </a>
             </tal:notLink>
@@ -41,11 +47,36 @@
                  tal:attributes="href python:item_remote_url; 
                                  target python: linkObj.target and '_blank' or '_self';
                                  title node/Description;
-                                 class string:$item_class${li_class}${li_folder_class} $item_type_class">
+                                 class string:$item_class${li_class}${li_folder_class} $item_type_class
+                                 ">
                   <span tal:content="node/Title">Selected Item Title</span>
               </a>
 
             </tal:Link>
+</tal:icone>
+
+
+<tal:noticone tal:condition="python:incluir_imagem == False">
+            <tal:notLink condition="python:item_type != 'Link'">
+              <a tal:attributes="href python:use_remote_url and item_remote_url or item_url;
+                                 title node/Description;
+                                 class string:$item_class${li_class}${li_folder_class} $item_type_class;">
+                  <span tal:content="node/Title">Selected Item Title</span>
+              </a>
+            </tal:notLink>
+
+            <tal:Link condition="python:item_type == 'Link'">
+              <a tal:define="linkObj python:view.getLinkObject(node['UID'])"
+                 tal:attributes="href python:item_remote_url;
+                                 target python: linkObj.target and '_blank' or '_self';
+                                 title node/Description;
+                                 class string:$item_class${li_class}${li_folder_class} $item_type_class
+                                 ">
+                  <span tal:content="node/Title">Selected Item Title</span>
+              </a>
+
+            </tal:Link>
+</tal:noticone>
 
             <tal:children condition="python: len(children) > 0 and level > 2">
               <ul tal:attributes="class python:'navTree navTreeLevel'+str(level)"

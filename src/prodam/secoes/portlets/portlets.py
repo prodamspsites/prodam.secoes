@@ -42,3 +42,11 @@ class Renderer(BaseRenderer):
                                 bottomLevel=bottomLevel)
 
     recurse = ViewPageTemplateFile('templates/secoes.pt')
+    
+    def getUrlIcone(self, obj):
+        if obj.icone != None:
+            print(obj.icone.filename)
+            print(obj.absolute_url())
+            return obj.absolute_url() + '/@@edit/++widget++form.widgets.icone/@@download/' + obj.icone.filename 
+        else:
+            return ''

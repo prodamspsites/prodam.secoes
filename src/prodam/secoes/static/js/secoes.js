@@ -2,7 +2,7 @@
    $(document).ready(function() {
      $(document).on("click", '.portletNavigationTree a', function(event) {
         tipo = $(this).attr('class').split(' ');
-        tipo = tipo[1]
+        tipo = tipo[1];
 
         if (tipo != 'link') {
 
@@ -11,7 +11,18 @@
           levelClass = $(this).parent().parent().attr('class').split(' ');
           level = levelClass[levelClass.length-1]
         
-          console.log('diferente')
+          console.log($(this).attr('href'));
+          
+          
+          console.log(window.navigator.userAgent);
+          var regChrome = new RegExp('Chrome');         
+          var regFirefox = new RegExp('Firefox');
+          
+          //if(regChrome.test(window.navigator.userAgent) || regFirefox.test(window.navigator.userAgent)){
+              window.history.pushState("","",$(this).attr('href'));
+              document.title = $(this).find('span').contents().text();
+          
+
           $.ajax({
             type: 'GET',
             url: link,
@@ -22,7 +33,8 @@
             }
          })
           .done(function( data ) {
-              $('#portal-columns').html($(data).find('#portal-columns'));
+              //$('#portal-columns').html($(data).find('#portal-columns'));
+              $('#plone-content').html($(data).find('#portal-columns'));
               if($('.navTreeLevel2')[0]) {
                 $('body').removeClass('secao-duas-colunas').addClass('secao-tres-colunas');
               } else {
