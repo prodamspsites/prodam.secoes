@@ -20,7 +20,7 @@
           
           //if(regChrome.test(window.navigator.userAgent) || regFirefox.test(window.navigator.userAgent)){
               window.history.pushState("","",$(this).attr('href'));
-              document.title = $(this).find('span').contents().text();
+              //document.title = $(this).find('span').contents().text();
           
 
           $.ajax({
